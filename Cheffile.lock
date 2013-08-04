@@ -1,0 +1,123 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apache2 (1.6.6)
+    apt (2.0.0)
+    ark (0.3.0)
+    aws (0.101.2)
+    build-essential (1.4.0)
+    chef-client (3.0.4)
+      cron (>= 1.2.0)
+    chef_gem (0.1.0)
+    chef_handler (1.1.4)
+    cron (1.2.4)
+    database (1.3.2)
+      aws (>= 0.0.0)
+      mysql (>= 1.2.0)
+      postgresql (>= 0.0.0)
+      xfs (>= 0.0.0)
+    imagemagick (0.2.2)
+    java (1.12.0)
+      windows (>= 0.0.0)
+    maven (0.16.2)
+      ark (>= 0.0.0)
+      java (>= 0.0.0)
+    mysql (3.0.2)
+      build-essential (> 1.1.0)
+      openssl (>= 0.0.0)
+    nginx (1.7.0)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      ohai (>= 1.1.4)
+      runit (>= 0.0.0)
+      yum (>= 0.0.0)
+    ohai (1.1.10)
+    openssl (1.0.2)
+    runit (1.1.6)
+      build-essential (>= 0.0.0)
+      yum (>= 0.0.0)
+    swftools (0.2.4)
+      apt (>= 0.0.0)
+    tomcat (0.14.2)
+      java (>= 0.0.0)
+      openssl (>= 0.0.0)
+    windows (1.10.0)
+      chef_handler (>= 0.0.0)
+    xfs (1.1.0)
+    yum (2.3.0)
+
+GIT
+  remote: git://github.com/httpdss/chef-alfresco.git
+  ref: master
+  sha: cb0f9be7140f02dcc5623f7183f2917897020bb1
+  specs:
+    alfresco (0.1.1)
+      database (>= 0.0.0)
+      imagemagick (>= 0.0.0)
+      java (>= 0.0.0)
+      maven (>= 0.0.0)
+      mysql (>= 0.0.0)
+      nginx (>= 0.0.0)
+      openoffice (>= 0.0.0)
+      swftools (>= 0.0.0)
+      tomcat (>= 0.0.0)
+
+GIT
+  remote: git://github.com/httpdss/chef-collectd.git
+  ref: master
+  sha: 29da0510945c11c2142aad1a06d7f5ba43441732
+  specs:
+    collectd (1.0.0)
+
+GIT
+  remote: git://github.com/httpdss/chef-collectd_plugins.git
+  ref: master
+  sha: d8e264da9ad982dc75978e48c14a9323db553378
+  specs:
+    collectd_plugins (1.0.0)
+      collectd (>= 0.0.0)
+
+GIT
+  remote: git://github.com/httpdss/chef-openoffice.git
+  ref: master
+  sha: ef7d847f0b028a7619e674cef189884362eeac61
+  specs:
+    openoffice (0.2.3)
+      java (>= 0.0.0)
+
+GIT
+  remote: https://github.com/findsyou/cookbooks
+  ref: postgresql-improvements
+  sha: ae23e8bb35e7fddf0709bd986742b38618b4db1e
+  specs:
+    postgresql (0.11.1)
+
+GIT
+  remote: https://github.com/fnichol/chef-git.git
+  ref: master
+  sha: 6c19cbefcdad5ec0f62a64dae1f656d660698ea3
+  specs:
+    git (0.9.0)
+      runit (>= 0.0.0)
+
+GIT
+  remote: https://github.com/fnichol/chef-rvm
+  ref: master
+  sha: 7038fb8c518d0d7785767de215b1ae463f237973
+  specs:
+    rvm (0.9.1)
+      chef_gem (>= 0.0.0)
+
+DEPENDENCIES
+  alfresco (>= 0)
+  apache2 (>= 1.0.0)
+  apt (>= 0)
+  build-essential (>= 0)
+  chef-client (>= 0)
+  collectd (>= 0)
+  collectd_plugins (>= 0)
+  git (>= 0)
+  openoffice (>= 0)
+  postgresql (>= 0)
+  rvm (>= 0)
+

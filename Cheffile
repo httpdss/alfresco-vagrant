@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'chef-client'
+
+cookbook 'apache2', '>= 1.0.0'
+
+cookbook 'openoffice',
+    :git => 'git://github.com/httpdss/chef-openoffice.git',
+    :ref => 'master'
+
+cookbook 'postgresql',
+  :git => 'https://github.com/findsyou/cookbooks',
+  :ref => 'postgresql-improvements'
+
+cookbook 'rvm',
+  :git => 'https://github.com/fnichol/chef-rvm'
+
+cookbook 'apt'
+
+cookbook 'git',
+  :git => 'https://github.com/fnichol/chef-git.git'
+
+cookbook 'build-essential'
+
+cookbook 'alfresco',
+  :git => 'git://github.com/httpdss/chef-alfresco.git',
+  :ref => 'master'
+
+cookbook 'collectd',
+    :git => 'git://github.com/httpdss/chef-collectd.git',
+    :ref => 'master'
+
+cookbook 'collectd_plugins',
+    :git => 'git://github.com/httpdss/chef-collectd_plugins.git',
+    :ref => 'master'
