@@ -7,7 +7,6 @@ Vagrant.configure("2") do |config|
   # config.vm.network :forwarded_port, guest: 8080, host: 7070
   config.vm.network :private_network, ip: "192.168.33.14"
 
-
   config.vm.provision :shell, :inline => "gem install chef --version '>= 11.0.0' --no-rdoc --no-ri --conservative"
 
   config.vm.provider :virtualbox do |vb|
